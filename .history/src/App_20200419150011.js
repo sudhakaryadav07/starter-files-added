@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ListContacts contacts={contacts} />
+        Hello World
       </div>
     );
   }
