@@ -9,7 +9,7 @@ class App extends Component {
         "id": "karen",
         "name": "Karen Isgrigg",
         "handle": "karen_isgrigg",
-        "avatarURL": "http://localhost:5001/karen.jpg"
+        "avatarURL": "http://localhost:5001/karen.jpg",
       },
       {
         "id": "richard",
@@ -35,13 +35,14 @@ class App extends Component {
   }
 
   render() {
-    let {contacts } = this.state;
+    let { contacts } = this.state;
+
     return (
       <div>
-        <ListContacts 
-        contacts={contacts}
-        onDeleteContact={this.removeContact}
-         />
+        <ListContacts
+          contacts={contacts}
+          onDeleteContact={this.removeContact}
+        />
       </div>
     );
   }
