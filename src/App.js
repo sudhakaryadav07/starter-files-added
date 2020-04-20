@@ -10,6 +10,7 @@ class App extends Component {
 
   componentDidMount() {
     ContactsAPI.getAll().then((contacts) => {
+      console.log(contacts)
       this.setState(() => ({
         contacts
       }))
@@ -22,6 +23,8 @@ class App extends Component {
         return c.id !== contact.id;
       })
     }));
+
+    ContactsAPI.remove(contact);
   }
 
   render() {
