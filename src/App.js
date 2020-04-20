@@ -16,6 +16,12 @@ class App extends Component {
         "name": "Richard Kalehoff",
         "handle": "richardkalehoff",
         "avatarURL": "http://localhost:5001/richard.jpg"
+      },
+      {
+        "id": "tyler",
+        "name": "Tyler McGinnis",
+        "handle": "tylermcginnis",
+        "avatarURL": "http://localhost:5001/tyler.jpg"
       }
     ]
   };
